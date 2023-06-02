@@ -1,0 +1,95 @@
+/* VARIABLES */
+:root {
+    --clr-card-background: hsl(0, 0%, 100%);
+    --clr-paragraph: hsl(221, 15%, 55%);
+    --clr-background: hsl(212, 45%, 89%);
+    --clr-title: hsl(218, 44%, 22%);
+
+    --ff-regular: 'Outfit', sans-serif;
+    --ff-bold: 'Outfit', sans-serif;
+
+    --fw-normal: 400;
+    --fw-heavy: 700;
+}
+
+/* END VARIABLES */
+
+/* RESET DEFAULTS */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+}
+
+img,
+svg {
+    display: block;
+    width: 100%;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* END RESET DEFAULTS */
+
+/* STYLES */
+body {
+    background-color: var(--clr-background);
+    display: grid;
+    place-content: center;
+}
+
+.qr-card {
+    font-family: var(--ff-regular);
+    color: var(--clr-paragraph);
+    background-color: var(--clr-card-background);
+    padding: 1rem;
+    margin: 1.7rem;
+    border-radius: 1.4rem;
+    overflow: hidden;
+    max-width: 375px;
+    text-align: center;
+}
+
+.qr-card__img {
+    border-radius: 0.7rem;
+    overflow: hidden;
+}
+
+.qr-card__text-section {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+}
+
+.qr-card__title {
+    font-size: 21px;
+    font-weight: var(--fw-heavy);
+    color: var(--clr-title);
+    margin-top: 1.35rem;
+    margin-bottom: 0.8rem;
+}
+
+.qr-card__text {
+    font-size: 15px;
+    margin-bottom: 0.9rem;
+}
